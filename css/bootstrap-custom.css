@@ -1,2 +1,15 @@
-body { line-height: 1.5; }
-.card { border-radius: 1rem; }
+body {
+  background-color: #f8f9fa;
+}
+
+header {
+  background: linear-gradient(135deg, #212529, #495057);
+  color: white;
+}
+
+header h1,
+header p {
+  color: white;
+}
+
+
