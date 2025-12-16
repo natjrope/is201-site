@@ -53,5 +53,21 @@ body {
   border-radius: 10px;
   overflow: hidden;
 }
+/* Tableau sizing + cleanup */
+.tableau-wrap { 
+  max-width: 900px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 12px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.tableauPlaceholder,
+.tableauPlaceholder object,
+.tableauViz {
+  width: 100% !important;
+}
+
 
 
