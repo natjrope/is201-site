@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Scratch Page - Film Scores</title>
+  <title>Film Scores</title>
   <link rel="stylesheet" href="css/scratch.css">
 </head>
 
@@ -13,81 +13,94 @@
   </div>
 
   <div class="container">
-    <h1 id="top">Scratch Page: Film Scores That Hit Different</h1>
+    <h1 id="top">The Power of Film Scores</h1>
 
-    <p>
-      Jump to:
-      <a href="#video">YouTube</a> |
-      <a href="#tableau">Tableau</a>
+    <p class="jump-links">
+      <a href="#favorites">Top Scores</a> |
+      <a href="#media">Media</a> |
+      <a href="#data">Music Data</a>
     </p>
 
-    <!-- DIV #1 -->
+    <!-- SECTION 1 -->
     <div class="block">
-      <h2>Why music matters to me</h2>
+      <h2>Why film music matters</h2>
       <p>
-        Music is a powerful tool across cultures. It strengthens stories, adds emotional weight,
-        and can bring comfort spiritually and emotionally. When used intentionally, music can
-        change how people feel and remember a moment.
+        Music is a powerful tool across cultures. In film, it strengthens storytelling,
+        adds emotional weight, and helps audiences connect more deeply to characters and worlds.
+        When used intentionally, music can shape how a story is remembered long after the credits roll.
       </p>
     </div>
 
-    <!-- DIV #2 -->
-    <div class="block">
-      <h2>My top film scores (nested list requirement)</h2>
+    <!-- SECTION 2: NESTED LIST -->
+    <div class="block" id="favorites">
+      <h2>My favorite film scores</h2>
 
       <ol>
-        <li>Top 3 favorites
+        <li>Top three soundtracks
           <ul>
             <li>How to Train Your Dragon</li>
             <li>Pirates of the Caribbean: At World’s End</li>
             <li>The Lord of the Rings</li>
           </ul>
         </li>
-        <li>Why they work (quick notes)
+        <li>What they have in common
           <ul>
-            <li>Strong themes you can recognize instantly</li>
-            <li>Big emotional payoff</li>
-            <li>Worldbuilding through sound</li>
+            <li>Strong, memorable themes</li>
+            <li>Emotional storytelling</li>
+            <li>Immersive world-building</li>
           </ul>
         </li>
       </ol>
     </div>
 
-    <!-- DIV #3 -->
-    <div class="block">
-      <h2>Image (not from Bootstrap theme)</h2>
-      <img class="photo" src="images/film-score.jpg" alt="Film score / music image">
-      <p class="caption">Add your own photo later, or use a royalty-free one (steps below).</p>
-    </div>
+    <!-- SECTION 3: IMAGE + VIDEO -->
+    <div class="block" id="media">
+      <h2>Film music in action</h2>
 
-    <!-- YouTube embed -->
-    <div class="block" id="video">
-      <h2>YouTube (embed requirement)</h2>
+      <img
+        class="photo"
+        src="images/film-score.jpg"
+        alt="Sheet music and orchestra instruments">
+
+      <p class="caption">
+        Film scores often blend orchestral tradition with modern storytelling techniques.
+      </p>
+
       <div class="video-wrap">
-        <iframe width="560" height="315"
+        <iframe
+          width="560"
+          height="315"
           src="https://www.youtube.com/embed/DUjewG1uyXI"
-          title="YouTube video"
+          title="Film score example"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
+          allowfullscreen>
+        </iframe>
       </div>
-      <p><a href="#top">Back to top</a></p>
     </div>
 
-    <!-- Tableau embed -->
-    <div class="block" id="tableau">
-      <h2>Interactive Tableau (embed requirement)</h2>
+    <!-- SECTION 4: TABLEAU + APP LINK -->
+    <div class="block" id="data">
+      <h2>Music trends and popularity</h2>
 
-      <!-- Paste the Tableau "Embed Code" right below this line -->
-      <!-- Replace this placeholder paragraph AFTER you copy the Embed Code -->
-      <div class='tableauPlaceholder' id='viz1765841532774' style='position: relative'><noscript><a href='#'><img alt='Billboard Hot 100 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bi&#47;BillboardHot100_0&#47;BillboardHot100&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='BillboardHot100_0&#47;BillboardHot100' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bi&#47;BillboardHot100_0&#47;BillboardHot100&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='utm_source=chatgpt.com' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1765841532774');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-       
+      <!-- PASTE YOUR TABLEAU EMBED CODE DIRECTLY BELOW THIS LINE -->
+      <!-- (This will not display instructions once embedded) -->
 
-      <h3 class="mt">My AI Web App</h3>
-      <p><a href="app.html">Open my web app</a></p>
+      <p>
+        Interactive data can reveal trends in music popularity and audience preferences over time.
+      </p>
+
+      <h3>Related project</h3>
+      <p>
+        I also created a small interactive web app related to this project:
+        <br>
+        <a href="app.html"><strong>View my web app →</strong></a>
+      </p>
 
       <p><a href="#top">Back to top</a></p>
     </div>
   </div>
 </body>
 </html>
+
+
