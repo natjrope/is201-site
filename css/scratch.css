@@ -2,7 +2,7 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   color: #222;
-  background: #eef2f7;
+  background: #f6f5f2;
 }
 
 .topbar {
@@ -100,6 +100,7 @@ body {
   height: auto;
   border-radius: 12px;
 }
+
 
 
 
