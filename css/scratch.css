@@ -45,4 +45,13 @@ body {
   margin-top: 10px;
   overflow-x: auto;
 }
+.tableau-wrap {
+  max-width: 900px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 12px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
 
