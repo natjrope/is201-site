@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mini Web App</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin:0; background:#f7f7f7; color:#222; }
+    .wrap { max-width:720px; margin:0 auto; padding:24px; }
+    .card { background:white; padding:18px; border-radius:14px; box-shadow: 0 2px 10px rgba(0,0,0,.08); }
+    input, button { font-size: 1rem; padding:10px; }
+    button { cursor:pointer; }
+    .row { display:flex; gap:10px; flex-wrap:wrap; margin-top:10px; }
+    .msg { margin-top:12px; font-weight:600; }
+    a { color:#0b5ed7; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <p><a href="scratch.html">← Back to Scratch Page</a></p>
+
+    <div class="card">
+      <h1>Number Guessing Game</h1>
+      <p>I’m thinking of a number from <strong>1–100</strong>. Try to guess it!</p>
+
+      <div class="row">
+        <input id="guess" type="number" min="1" max="100" placeholder="Enter a guess">
+        <button id="btnGuess">Guess</button>
+        <button id="btnReset">Reset</button>
+      </div>
+
+      <div class="msg" id="msg">Good luck 🙂</div>
+      <p id="stats"></p>
+    </div>
+  </div>
+
+  <script>
+    let secret = Math.floor(Math.random() * 100) + 1;
+    let tries = 0;
+
+    const guessEl = document.getElementById("guess");
+    const msgEl = document.getElementById("msg");
+    const statsEl = document.getElementById("stats");
+
+    function setMessage(text) { msgEl.textContent = text; }
+    function updateStats() { statsEl.textContent = `Attempts: ${tries}`; }
+
+    document.getElementById("btnGuess").addEventListener("click", () => {
+      const val = Number(guessEl.value);
+      if (!val || val < 1 || val > 100) {
+        setMessage("Enter a number from 1 to 100.");
+        return;
+      }
+
+      tries++;
+      updateStats();
+
+      if (val === secret) setMessage(`✅ You got it! The number was ${secret}.`);
+      else if (val < secret) setMessage("Too low — go higher.");
+      else setMessage("Too high — go lower.");
+    });
+
+    document.getElementById("btnReset").addEventListener("click", () => {
+      secret = Math.floor(Math.random() * 100) + 1;
+      tries = 0;
+      guessEl.value = "";
+      setMessage("Reset! Guess the new number 🙂");
+      updateStats();
+    });
+
+    updateStats();
+  </script>
+</body>
+</html>
