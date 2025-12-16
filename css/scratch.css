@@ -68,6 +68,8 @@ body {
 .tableauViz {
   width: 100% !important;
 }
+.tableau-wrap { padding-top: 18px; }
+
 
 
 
